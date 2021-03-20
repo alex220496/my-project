@@ -1,0 +1,534 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+ .header {
+    background: url(img/bg.png) center no-repeat;
+    background-size: cover;
+    width: 100%; 
+}
+.container {
+    width: 100%;
+    max-width: 720px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*----------------HEADER-------------------*/
+.section-first {
+    width: 100%;
+    display: flex;
+    padding: 40px 0; 
+    background-color: rgba(0, 0, 0, 0.30);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+    
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+   
+}
+.menu a:hover {
+    border: 2px solid rgb(231, 228, 52);
+    color: rgb(231, 228, 52);
+    background-color: rgba(0, 0, 0, 0.205);
+    font-size: 18px;
+    border-radius: 5px;
+}
+.menu a {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-decoration: none;
+    padding: 0 15px;
+    
+}
+.section-second {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.30);
+    
+    
+}
+.welcome {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 200px;
+    
+    
+}
+.welcome h1{
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.welcome h2 {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 20px 0;
+
+}
+.get-started {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    margin-bottom: 260px;
+
+}
+.btn-get-started:hover {
+    background-color: rgba(255, 252, 55, 0.589);
+    font-size: 18px;
+    border: none;
+}
+.btn-get-started {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+    background: none;
+    color: #fff;
+    border: 3px solid #fff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    border-radius: 2px ;
+    outline: none;
+}
+/*------------------MAIN----------------------*/
+[class*="section-"] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.read-services p {
+    font-size: 16px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+.services-description h3{
+    font-size: 14px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+.services-description p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    text-align: center;
+    padding-bottom: 100px;
+}
+[class*="title-"] {
+    font-size: 20px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    border-bottom: 3px solid #555555;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+[class*="services-img"] {
+    border: 2px solid #dddddd;
+    border-radius: 50%;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
+.services-img-1 {
+    background: url(img/red-a.png) center no-repeat;
+}
+.services-img-2 {
+    background: url(img/quotes-red.png) center no-repeat;
+}
+.services-img-3 {
+    background: url(img/circle-red.png) center no-repeat;
+}
+.services-img-1:hover {
+    background-color:red;
+    background-image: url(img/white-a.png) ;
+    
+}
+.services-img-2:hover {
+    background-color:red;
+    background-image: url(img/quotes-white.png) ;
+    
+}
+.services-img-3:hover {
+    background-color:red;
+    background-image: url(img/circle-white.png) ;
+    
+}
+[class*="sub-"] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+[class*="read-"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.read-about-as p {
+    font-size: 16px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    text-align: center;
+    padding: 30px 0 75px 0;
+}
+.as-description p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    padding-bottom: 70px;
+}
+[class*="persone-img-"] {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+[class*="face"] {
+    width: 100%;
+    
+ 
+}
+[class*="persone-img-"]:hover .icon {
+    opacity: 1;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(126, 122, 122, 0.404);
+    opacity: 0;
+    
+    
+}
+.icon a {
+    width: 30px;
+    height: 30px;
+    margin-top: 65%;
+    
+    
+}
+.icon a:hover {
+    background-color: red;
+}
+.red-faceboock {
+    background: url(img/Facebook.png) center no-repeat;
+    
+}
+.red-twitter {
+    background: url(img/Twitter.png) center no-repeat;
+    
+}
+.red-google {
+    background: url(img/Google\ Plus.png) center no-repeat;
+    
+}
+.red-link {
+    background: url(img/linkedin.png) center no-repeat;
+   
+}
+.about-as-description h3 {
+    font-size: 14px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Montserrat";
+    padding: 20px 0;
+    text-align: center;
+}
+.about-as-description p{
+    font-size: 13px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/* MEDIA */
+@media (max-width:767px){
+    .nav {
+        display: none;
+    }
+    .col-xs-2 {
+        flex: 0 0 16.6666%;
+        max-width: 16.666%;
+    }
+    .col-xs-3 {
+        flex:0 0 25%;
+        max-width: 25% ;
+    }
+    .col-xs-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+    .col-xs-5 {
+        flex: 0 0 41.6666%;
+        max-width: 41.666%;
+    }
+    .col-xs-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-xs-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-xs-8 {
+        flex: 0 0 66.6666%;
+        max-width: 66.6666%;
+    }
+    .col-xs-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-xs-10 {
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
+    }
+    .col-xs-11 {
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
+    }
+    .col-xs-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    [class*="persone-img-"] {
+        width: 80%;
+        height: 360px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    
+}
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 720px;
+    }
+    .menu {
+        overflow-y: scroll;
+    }
+    .col-sm-2 {
+        flex: 0 0 16.6666%;
+        max-width: 16.666%;
+    }
+    .col-sm-3 {
+        flex:0 0 25%;
+        max-width: 25% ;
+    }
+    .col-sm-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+    .col-sm-5 {
+        flex: 0 0 41.6666%;
+        max-width: 41.666%;
+    }
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-sm-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-sm-8 {
+        flex: 0 0 66.6666%;
+        max-width: 66.6666%;
+    }
+    .col-sm-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-sm-10 {
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
+    }
+    .col-sm-11 {
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
+    }
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (min-width: 960px) {
+    .container {
+        width: 100%;
+        max-width: 920px;
+    }
+    [class*="persone-img-"] {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    .col-md-2 {
+        flex: 0 0 16.6666%;
+        max-width: 16.666%;
+    }
+    .col-md-3 {
+        flex:0 0 25%;
+        max-width: 25% ;
+    }
+    .col-md-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+    .col-md-5 {
+        flex: 0 0 41.6666%;
+        max-width: 41.666%;
+    }
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-md-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-md-8 {
+        flex: 0 0 66.6666%;
+        max-width: 66.6666%;
+    }
+    .col-md-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-md-10 {
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
+    }
+    .col-md-11 {
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
+    }
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+        max-width: 1140px;
+    }
+    .col-md-2 {
+        flex: 0 0 16.6666%;
+        max-width: 16.666%;
+    }
+    .col-md-3 {
+        flex:0 0 25%;
+        max-width: 25% ;
+    }
+    .col-md-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+    .col-md-5 {
+        flex: 0 0 41.6666%;
+        max-width: 41.666%;
+    }
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-md-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-md-8 {
+        flex: 0 0 66.6666%;
+        max-width: 66.6666%;
+    }
+    .col-md-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-md-10 {
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
+    }
+    .col-md-11 {
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
+    }
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
