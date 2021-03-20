@@ -6,9 +6,13 @@ body {
     font-family: 'Roboto Slab', serif;
 }
  .header {
-    background: url(img/bg.png) center no-repeat;
-    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
     width: 100%; 
+    
+    padding: 40px 0;
 }
 .container {
     width: 100%;
@@ -30,18 +34,7 @@ body {
 }
 
 /*----------------HEADER-------------------*/
-.section-first {
-    width: 100%;
-    display: flex;
-    padding: 40px 0; 
-    background-color: rgba(0, 0, 0, 0.30);
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    
-    
-}
+
 
 .menu {
     display: flex;
@@ -69,7 +62,9 @@ body {
 .section-second {
     width: 100%;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.30);
+    background: url(img/bg.png) center no-repeat;
+    background-size: cover;
+    position: absolute;
     
     
 }
@@ -126,12 +121,14 @@ body {
     border-radius: 2px ;
     outline: none;
 }
+
 /*------------------MAIN----------------------*/
 [class*="section-"] {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .read-services p {
@@ -314,9 +311,7 @@ body {
     .welcome {
         margin-top: 100px;
     }
-    .about-as-description p{
-        padding-bottom: 50px;
-    }
+    
     .services-description p{
         padding-bottom: 50px;
     }
