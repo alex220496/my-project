@@ -305,6 +305,21 @@ body {
     .nav {
         display: none;
     }
+    [class*="title-"] {
+        padding-top: 50px;
+    }
+    .get-started {
+        margin-bottom: 100px;
+    }
+    .welcome {
+        margin-top: 100px;
+    }
+    .about-as-description p{
+        padding-bottom: 50px;
+    }
+    .services-description p{
+        padding-bottom: 50px;
+    }
     .col-xs-2 {
         flex: 0 0 16.6666%;
         max-width: 16.666%;
