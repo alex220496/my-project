@@ -235,12 +235,13 @@ body {
 }
 [class*="persone-img-"] {
     width: 100%;
-    height: 250px;
+    height: 100%;
     overflow: hidden;
     position: relative;
 }
 [class*="face"] {
     width: 100%;
+    height: 100%;
     
  
 }
@@ -401,6 +402,56 @@ body {
    
     
 }
+.section-get-in-touch {
+    background: url(img/bgrednew.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.getintouch {
+    background-color: #bf2e1b86;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+.getintouch h2 {
+    font-size: 30px;
+    line-height: 44px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    text-align: center;
+    padding-bottom: 50px;
+}
+.get-in-touch {
+    width: 180px;
+    height: 50px;
+    border: 3px solid #ffffff;
+    background: none;
+    outline: none;
+    font-size: 18px; 
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    text-align: center;
+    cursor: pointer;
+}
+.get-in-touch:hover {
+    background-color: #bf2e1b;
+    font-size: 19px;
+}
+
+.read-recent-blog-posts p {
+    font-size: 16px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    text-align: center;
+    padding: 30px 0 75px 0;
+}
+
 
 
 
@@ -419,8 +470,8 @@ body {
         margin-top: 100px;
     }
     .none {
-        width:  75%;
-        height: 90%;
+        width:  90%;
+        height: 100%;
     }
     .style {
         font-size: 10px;
@@ -434,7 +485,7 @@ body {
 
     .mini-title {
         opacity: 0;
-        width: 100%;
+        width: 90%;
         height: 100%;
     }
     .services-description p{
@@ -493,17 +544,11 @@ body {
     
     [class*="persone-img-"] {
         width: 80%;
-        height: 360px;
+        height: 100%;
         overflow: hidden;
         position: relative;
     }
-    .icon a {
-        width: 30px;
-        height: 30px;
-        margin-top: 50%;
-        
-        
-    }
+    
     
     
 }
@@ -570,10 +615,11 @@ body {
     .menu {
         overflow-y: visible;
     }
+    
     [class*="persone-img-"] {
         width: 100%;
-        height: 320px;
-        overflow: hidden;
+        height: 100%;
+        /* overflow: hidden; */
         position: relative;
     }
     .col-sm-2 {
