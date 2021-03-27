@@ -1,4 +1,5 @@
- let tabItems =document.querySelectorAll(".tab-img");
+// TABS
+let tabItems =document.querySelectorAll(".tab-img");
  let tabItemWrap =document.querySelector(".tab-imgs");
  let tabContent = document.querySelectorAll(".tab-content");
 
@@ -48,3 +49,56 @@ $('.block-slider').slick({
     fade: true,
     cssEase: 'linear'
   });
+  // MODAl and Scroll
+ let btnGetStarted = document.querySelectorAll(".btn-get-started");
+ let modal = document.querySelector(".modal");
+ let btnClose =document.querySelector(".closed-modal")
+ console.log(btnClose);
+
+ btnGetStarted.forEach(btn => {
+    btn.addEventListener("click",openModal)
+ });
+
+btnClose.addEventListener("click",hideModal)
+
+function openModal() {
+    modal.classList.add("show");
+    modal.classList.remove("hide");
+}
+
+function hideModal() {
+    modal.classList.add("hide");
+    modal.classList.remove("show");
+}
+
+modal.addEventListener("click",function(e) {
+    if(e.target === modal) {
+        hideModal()
+    }
+});
+
+function showModalByScroll () {
+    if (window.pageYOffset > document.body.scrollHeight/2){
+        openModal ();
+        window.removeEventListener("scroll", showModalByScroll)
+    }
+}
+window.addEventListener("scroll", showModalByScroll);
+//Scroll menu 
+ let jsheader = document.querySelector(".jsheader");
+ function backBlack() {
+     jsheader.classList.add("backblack");
+}
+
+function removebackBlack() {
+    jsheader.classList.remove("backblack");
+   
+}
+
+ function bgBlackByScroll() {
+     if (window.pageYOffset > document.body.scrollHeight/8){
+         backBlack();
+     } else 
+        removebackBlack(); 
+}
+ window.addEventListener("scroll", bgBlackByScroll);

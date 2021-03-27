@@ -5,15 +5,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto Slab', serif;
 }
- .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%; 
-    
-    padding: 40px 0;
-}
+
+
 .container {
     width: 100%;
     max-width: 720px;
@@ -34,7 +27,19 @@ body {
 }
 
 /*----------------HEADER-------------------*/
-
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%; 
+    padding: 40px 0;
+}
+.backred {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+}
 
 .menu {
     display: flex;
@@ -645,11 +650,176 @@ body {
     text-align: center;
     padding: 25px 0;
 }
+.section-modal {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(236, 235, 235);
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+}
+.contact-title {
+    padding: 0 0 15px 0;
+    font-size: 14px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+.contact-title img {
+    padding-right: 15px;
+    
+}
+.read-modal p {
+    padding-top: 30px;
+}
+[class*="con-"] {
+    padding: 20px 0;
+    
+}
+[class*="con-"] p {
+    font-size: 12px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    padding: 5px 0 5px 30px;
+    
+}
+[class*="check-in-"] {
+    padding: 70px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input:hover {
+    border: 1px solid #f00;
+}
+.input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    font-size: 12px;
+    border-radius: 3px;
+}
+#subb-textarea {
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.button-send-message {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.button-send-message p {
+    padding: 15px ;
+    font-size: 14px;
+    color: #555555;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+}
+.send-massege {
+    width: 170px;
+    height: 45px;
+    font-size: 14px;
+    border-radius: 3px;
+    background: none;
+
+}
+.send-massege:hover {
+    background-color: rgb(180, 180, 180);
+    color: #fff;
+    border-radius: 5px;
+}
+.span-red {
+    color: #f00;
+}
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 100%;
+
+}
+.subb-modal {
+    border: 1px solid black;
+    margin: 80px auto;
+    width: 500px;
+    height: 350px;
+    background-color: rgb(77, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+}
+.my-modal {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal-send {
+    width: 170px;
+    height: 45px;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-modal {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal-input {
+    width: 100%;
+    height: 30px;
+    margin:10px;
+}
+.closed-modal {
+    cursor: pointer;
+    position: relative;
+    top: 3%;
+    left: 93%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.backblack {
+    background-color: rgba(0, 0, 0, 0.863);
+    padding: 20px 0;
+}
+
 
 /* MEDIA */
 @media (max-width:767px){
     .nav {
         display: none;
+    }
+    .contacts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    [class*="check-in-"] {
+        padding: 20px 0;
     }
     .section-slayder {
         width: 90%;
