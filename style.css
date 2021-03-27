@@ -873,7 +873,34 @@ body {
 }
 /* MEDIA */
 @media (max-width:767px){
+    .form-modal {
+        flex-direction: column;
+    }
+    .subb-modal {
+        width: 80%;
+        height: 400px;
+        margin: 80 auto ;
+    }
+    #mytextarea {
+        width: 60%;
+        margin-top: 10px;
+    }
+    .modal-send{
+        width: 100%;
+    }
+    .modal-input {
+        width: 100%;    
+    }
+    .my-modal {
+        padding: 0;
+    }
+    .textarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .nav {
+        
         overflow-y: scroll;
     }
     .contacts {
@@ -915,6 +942,11 @@ body {
     }
     .welcome h1 {
         font-size: 30px;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .mini-title {
