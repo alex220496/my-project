@@ -811,7 +811,7 @@ body {
 /* MEDIA */
 @media (max-width:767px){
     .nav {
-        display: none;
+        overflow-y: scroll;
     }
     .contacts {
         display: flex;
