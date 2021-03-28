@@ -888,6 +888,9 @@ body {
     .header {
         max-height: 100px;
     }
+    .menu a {
+        font-size: 10px;
+    }
     .subb-modal {
         width: 80%;
         height: 400px;
