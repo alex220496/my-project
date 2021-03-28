@@ -889,7 +889,8 @@ body {
         max-height: 100px;
     }
     .menu a {
-        font-size: 10px;
+        font-size: 20px;
+        padding: 0 15px;
     }
     .subb-modal {
         width: 80%;
@@ -962,11 +963,7 @@ body {
     .welcome h1 {
         font-size: 30px;
     }
-    .menu {
-        display: flex;
-        justify-content: center;
-        
-    }
+    
 
     .mini-title {
         opacity: 0;
