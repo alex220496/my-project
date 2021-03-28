@@ -871,6 +871,14 @@ body {
     font-weight: 400;
     font-family: "Roboto Slab";
 }
+#mytextarea {
+    width: 410px;
+    max-width: 410px;
+    max-height: 100px;
+    min-width: 410px;
+    min-height: 100px;
+    height: 100px;
+}
 /* MEDIA */
 @media (max-width:767px){
     .form-modal {
@@ -883,6 +891,10 @@ body {
     }
     #mytextarea {
         width: 60%;
+        max-width: 60%;
+        max-height: 70px;
+        min-width: 60%;
+        min-height: 50px;
         margin-top: 10px;
     }
     .modal-send{
