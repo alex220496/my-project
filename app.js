@@ -102,3 +102,16 @@ function removebackBlack() {
         removebackBlack(); 
 }
  window.addEventListener("scroll", bgBlackByScroll);
+ // MOBILE MENU
+
+ let navMenu = document.querySelector(".nav-mobile");
+ let mainMenu = document.querySelector(".navigation")
+
+ navMenu.addEventListener("click", function(){
+     navMenu.classList.toggle("active-menu")
+     if(navMenu.classList.contains("active-menu")) {
+         mainMenu.classList.add("active-menu")
+     } else {
+         mainMenu.classList.remove("active-menu")
+     }
+ })
