@@ -96,7 +96,7 @@ function removebackBlack() {
 }
 
  function bgBlackByScroll() {
-     if (window.pageYOffset > document.body.scrollHeight/40){
+     if (window.pageYOffset > document.body.scrollHeight/100){
          backBlack();
      } else 
         removebackBlack(); 
